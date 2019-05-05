@@ -31,11 +31,14 @@ body {
 }
 
 .top-banner img {
-    height: 25%;
-    width: 25%;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    bottom: 46%;
+    left: 24%;
+
     margin: 0 auto;
     display: block;
-    padding-top: 24px;
 }
 
 .tagline {
@@ -49,6 +52,9 @@ body {
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 18%;
+  left: 28.5%;
 }
 
 .tagline p {
