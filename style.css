@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+body {
+    background-color: black;
+}
+
+.center-div {
+    background-color: #151515;
+    margin: 0 auto;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}
+
+.center-div h2 {
+  font-size: 17px;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.top-banner {
+    background-image: url(images/top.gif);
+    background-size: cover;
+    width: 100%;
+    min-height: 336px;
+    background-position: bottom;
+}
+
+.top-banner img {
+    height: 25%;
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 24px;
+}
+
+.tagline {
+  margin: 12px auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+  background-color: white;
+  color: #151515;
+  width: 40%;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+.tagline p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  line-height: 1.3em;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+.play-button {
+  position: absolute;
+  bottom: -63px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  letter-spacing: 5px;
+  background-image: linear-gradient(180deg, #F24A4A 0%, #F59166 100%);
+  padding: 16px 33px;
+  display: block;
+  border-radius: 35px;
+}
+
+.play-button:hover {
+  background-image: linear-gradient(180deg, #ffacac 0%, #F59166 100%);
+}
+
+.belly {
+  margin: 44px auto;
+  width: 90%;
+}
+
+.howto-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.howto-left img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.howto-left p {
+  font-size: 22px;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  margin-left: 33px;
+}
+
+
+
+.howto-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 44px 0;
+}
+
+.howto-right img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.howto-right p {
+  font-size: 22px;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  margin-left: 33px;
+}
+
+/*
+@media (min-width: 1025px)  {
+  .center-div {
+    width: 100%;
+  }
+}
+
+@media (min-width:320px) {
+    .center-div {
+    width: 100%;
+  }\
+}
+*/
