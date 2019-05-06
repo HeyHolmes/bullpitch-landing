@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-
 body {
-    background-color: black;
-    margin: 0;
+  background-color: black;
+  margin: 0;
 }
 
 .center-div {
-    background-color: #151515;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    max-width: 900px;
-    text-align: center;
+  background-color: #151515;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
 }
 
 .center-div h2 {
@@ -24,22 +23,22 @@ body {
 }
 
 .top-banner {
-    background-image: url(images/top.gif);
-    background-size: cover;
-    height: 400px;
-    background-position: bottom;
-    position: relative;
+  background-image: url(images/top.gif);
+  background-size: cover;
+  height: 400px;
+  background-position: bottom;
+  position: relative;
 }
 
 .top-banner img {
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    bottom: 46%;
-    left: 24%;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  bottom: 46%;
+  left: 24%;
 
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 .tagline {
@@ -111,8 +110,6 @@ body {
   color: white;
   margin-left: 33px;
 }
-
-
 
 .howto-right {
   display: flex;
