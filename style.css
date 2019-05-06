@@ -3,13 +3,15 @@
 
 body {
     background-color: black;
+    margin: 0;
 }
 
 .center-div {
     background-color: #151515;
     margin: 0 auto;
     height: 100%;
-    width: 70%;
+    width: 100%;
+    max-width: 900px;
     text-align: center;
 }
 
@@ -24,8 +26,7 @@ body {
 .top-banner {
     background-image: url(images/top.gif);
     background-size: cover;
-    width: 100%;
-    min-height: 336px;
+    height: 400px;
     background-position: bottom;
     position: relative;
 }
