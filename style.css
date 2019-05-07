@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-
 body {
-    background-color: black;
+  background-color: black;
+  margin: 0;
 }
 
 .center-div {
-    background-color: #151515;
-    margin: 0 auto;
-    height: 100%;
-    width: 70%;
-    text-align: center;
+  background-color: #151515;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
 }
 
 .center-div h2 {
@@ -22,19 +23,22 @@ body {
 }
 
 .top-banner {
-    background-image: url(images/top.gif);
-    background-size: cover;
-    width: 100%;
-    min-height: 336px;
-    background-position: bottom;
+  background-image: url(images/top.gif);
+  background-size: cover;
+  height: 400px;
+  background-position: bottom;
+  position: relative;
 }
 
 .top-banner img {
-    height: 25%;
-    width: 25%;
-    margin: 0 auto;
-    display: block;
-    padding-top: 24px;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  bottom: 46%;
+  left: 24%;
+
+  margin: 0 auto;
+  display: block;
 }
 
 .tagline {
@@ -48,6 +52,9 @@ body {
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 18%;
+  left: 28.5%;
 }
 
 .tagline p {
@@ -59,13 +66,13 @@ body {
 .btn-box {
   display: flex;
   justify-content: space-around;
-  position: relative;
+  /*position: relative;*/
 }
 
 
 .play-button {
   position: absolute;
-  bottom: -63px;
+  bottom: -3%;
   margin: 0 auto;
   text-decoration: none;
   font-family: 'Comfortaa', cursive;
@@ -103,8 +110,6 @@ body {
   color: white;
   margin-left: 33px;
 }
-
-
 
 .howto-right {
   display: flex;
