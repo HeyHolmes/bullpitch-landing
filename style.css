@@ -28,6 +28,8 @@ body {
   height: 400px;
   background-position: bottom;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .top-banner img {
@@ -36,9 +38,7 @@ body {
   width: 50%;
   bottom: 46%;
   left: 24%;
-
   margin: 0 auto;
-  display: block;
 }
 
 .tagline {
@@ -48,13 +48,13 @@ body {
   font-family: 'Comfortaa', cursive;
   background-color: white;
   color: #151515;
-  width: 40%;
+  width: 300px;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 0 7px rgba(0,0,0,0.5);
   position: absolute;
   bottom: 18%;
-  left: 28.5%;
+
 }
 
 .tagline p {
