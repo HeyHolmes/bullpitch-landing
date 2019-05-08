@@ -1,12 +1,13 @@
-
+const button = document.getElementById('play-button');
+const howToText = document.querySelector('#howto > p');
 
 setTimeout(function(){
-  document.getElementById('play-button').style.visibility = "visible";
-  document.getElementById('play-button').style.transition = "ease";
+  button.classList.add("appear");
 },3000);
 
 setTimeout(function(){
-document.getElementById('howto').style.visibility = "visible";
-},3500);
+  howToText.classList.add("appear");
+  console.log(howToText);
+},4000);
 
 
