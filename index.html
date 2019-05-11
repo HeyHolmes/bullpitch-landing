@@ -2,30 +2,61 @@
 <html>
 
 <head>
-    <title>Bull Pitch</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <title>Bull Pitch</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="wheel-spin">
-            <a id="play-button">PITCH</a>
-            <div id="howto">
-                <p>HOW TO PLAY</p>
-            </div>
-        </div>
-        <div id="finger">
-            <img src="images/finger-point.png">
-        </div>
+  <div class="center-div">
+    <div class="top-banner">
+      <!-- <img src="images/logo.svg"> -->
+
+      <div class="tagline">
+        <p>A drinking game for founders full of shit.</p>
+      </div>
+
+      <a href="https://dcts.github.io/bullpitch/" id="play-button">PLAY NOW</a>
+
+      <div id ="howto">
+      <p>HOW TO PLAY</p>
+      </div>
+      <div id ="finger">
+        👇
+      </div>
+
     </div>
-    <div class="howto-vid">
-        <iframe width="100%" height="700" src="https://www.youtube.com/embed/BnRJXyyNuSo" frameborder="0" allowfullscreen=""></iframe>
-  
+
+
+    <div class="belly">
+      <div class="howto-left">
+        <img src="images/howto1.gif">
+        <p>Place your phone on the table and gather around with friends.</p>
+      </div>
+
+      <div class="howto-left">
+
+        <img src="images/howto2.gif">
+        <p>Tap spin to randomly generate a fake start up name.</p>
+      </div>
+
+      <div class="howto-left">
+        <img src="images/howto3.gif">
+        <p>Whoever it's pointing to just founded a new company and has to pitch it to their friends.</p>
+      </div>
     </div>
-    <script src="animate.js"> </script>
+  </div>
+  <script src="animate.js"></script>
+
+  <!-- <script>
+    $(document).ready(function() {
+      $('#play-button').hide().delay(3000).fadeIn(2200);
+    });
+  </script> -->
 </body>
 
 </html>
