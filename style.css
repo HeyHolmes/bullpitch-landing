@@ -12,9 +12,8 @@ body {
 }
 
 .wheel-spin {
-  /*border: 5px solid green;*/
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 90%;
   background-image:url("images/landing-spinner.gif");
   background-size: cover;
   background-position: top;
@@ -31,7 +30,7 @@ body {
   font-family: 'Comfortaa', cursive;
   width: 200px;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 19px;
 }
 
 .appear {
@@ -40,8 +39,8 @@ body {
 
 #play-button {
   opacity: 0;
-  background-color: #68C84D;
-  color: #151515;
+  background-color: #4684B7;
+  color: #FFFFFF;
   border-radius: 40px;
   cursor: pointer;
   display: inline-block;
@@ -53,19 +52,19 @@ body {
   font-size: 27px;
   width: 33%;
   text-align: center;
-  box-shadow: 0 5px #549E3F;
+  box-shadow: 0 5px #2C516F;
   margin-bottom: 2%;
   padding: 4% 10%;
   transition: opacity 0.5s ease;
+  position: relative;
 }
 
 #play-button:hover {
-  box-shadow: none;
-  top: 2px;
+  box-shadow: 0 3.3px #2C516F;
+  top: 4px;
 }
 
 #howto {
-
   margin: 10px auto;
   text-align: center;
   font-size: 15px;
@@ -74,8 +73,7 @@ body {
   color: #151515;
   letter-spacing: 1px;
   margin-bottom: 5%;
-/*  transition: ease .2s;
-  transition-delay: 3.3s;*/
+
 }
 #howto > p {
   opacity: 0;
@@ -83,10 +81,9 @@ body {
 }
 
 #finger {
-  position: relative;
   margin: 10px auto;
   text-align: center;
-  bottom: 37px
+
 }
 
 #finger img {
@@ -95,51 +92,39 @@ body {
   width: 66px;
   opacity: 0;
   transition: opacity 0.5s ease;
+  position: relative;
+  animation-name: wobble;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+
 }
 
+@-webkit-keyframes wobble {
+  from {bottom: 30px;}
+  to {bottom: 39px;}
+}
+
+
 .howto-vid {
-  border: 5px solid blue;
+  /*border: 5px solid blue;*/
+  margin: 20px;
   height: 100vh;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .wheel-spin {
-    width: 100%;
-    height: 90%;
-    margin-top: 7px;
+    width: 800px;
+    height: 800px;
+    margin-top: 10px;
   }
- /* #play-button {
-
-  background-color: #68C84D;
-  color: #151515;
-  border-radius: 40px;
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: 'Comfortaa', cursive;
-  letter-spacing: 3px;
-  font-size: 27px;
-  width: 60%;
-  text-align: center;
-  box-shadow: 0 5px #549E3F;
-  margin-bottom: 25px;
-  padding: 4% 10%;*/
-}
-
-/*@media (max-width: 1200px) {
-  .wheel-spin {
-    width: 100%;
+  #play-button {
+    padding: 2% 0;
+    border-radius: 29px;
+    width: 30%;
+  }
+  .howto-vid {
+  /*border: 5px solid blue;*/
+  margin: 200px;
+  height: 100vh;
   }
 }
-
-@media (max-width: 380px) and{
-  .wheel-spin {
-    width: 100%;
-    height: 90%;
-    margin-top: 7px;
-    border: 10px solid red;
-  }
-
-}*/
