@@ -5,7 +5,9 @@ body {
   margin: 0 auto;
   background-color: #151515;
 }
-
+a {
+  text-decoration: none;
+}
 .container {
   /*border: 5px solid red;*/
   height: 89vh;
