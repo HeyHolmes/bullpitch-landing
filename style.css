@@ -1,109 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-
 body {
-  background-color: #151515;
-  margin: 0;
-}
-
-/*
-@keyframes appearButton {
-  0% {
-    opacity:0;
-    transition: all opacity 1s linear;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
-
-#play-button {
-  opacity: 0;
-  position: absolute;
-  bottom: 17.5%;
   margin: 0 auto;
-  text-decoration: none;
-  font-family: 'Comfortaa', cursive;
-  letter-spacing: 5px;
-  background-color: white;
-  padding: 22px 53px;
-  display: block;
-  border-radius: 35px;
-  font-size: 22px;
-  box-shadow: 0px 0px 105px 6px rgba(0,0,0,.33);
-  color: #151515;
-  transition: opacity 0.5s ease;
-}
-
-/* THIS CLASS IS TRIGGERED BY JAVASCRIPT */
-.appear {
-  opacity: 1 !important;
-}
-
-.center-div {
   background-color: #151515;
-  margin: 0 auto;
-  height: 100%;
+}
+
+.container {
+  /*border: 5px solid red;*/
+  height: 89vh;
+}
+
+.wheel-spin {
   width: 100%;
-  max-width: 700px;
-  text-align: center;
-}
-
-.center-div h2 {
-  font-size: 27px;
-  font-family: 'Comfortaa', cursive;
-  color: white;
-  letter-spacing: 2px;
- /* transition: ease .2s;
-  transition-delay: 3.3s;*/
-}
-
-.top-banner {
-  background-image: url(images/landing-logo-spin.gif);
+  height: 90%;
+  background-image:url("images/landing-spinner.gif");
   background-size: cover;
-  height: 700px;
-  background-position: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-#howto {
-  position: absolute;
-  margin: 10px auto;
-  text-align: center;
-  bottom: 6%;
-  font-size: 17px;
-  font-family: 'Comfortaa', cursive;
-  color: #151515;
-  letter-spacing: 3px;
-  /*transition: ease .2s;
-  transition-delay: 3.3s;*/
-}
-#howto > p {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-#finger {
-  font-size: 77px;
-  position: absolute;
-  margin: 10px auto;
-  text-align: center;
-  bottom: -9%;
-
-}
-
-
-.top-banner img {
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  bottom: 46%;
-  left: 24%;
+  background-position: top;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .tagline {
@@ -113,63 +30,101 @@ body {
   font-family: 'Comfortaa', cursive;
   width: 200px;
   padding: 10px;
-  border-radius: 12px;
-  position: absolute;
-  bottom: 27.6%;
+  border-radius: 19px;
+}
+
+.appear {
+  opacity: 1 !important;
+}
+
+#play-button {
+  opacity: 0;
+  background-color: #4684B7;
+  color: #FFFFFF;
+  border-radius: 40px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Comfortaa', cursive;
+  letter-spacing: 4px;
+  font-size: 27px;
+  width: 33%;
+  text-align: center;
+  box-shadow: 0 5px #2C516F;
+  margin-bottom: 2%;
+  padding: 4% 10%;
+  transition: opacity 0.5s ease;
+  position: relative;
+}
+
+#play-button:hover {
+  box-shadow: 0 3.3px #2C516F;
+  top: 4px;
+}
+
+#howto {
+  margin: 10px auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  color: #151515;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+
+}
+#howto > p {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#finger {
+  margin: 10px auto;
+  text-align: center;
 
 }
 
-.tagline p {
-  margin: 0;
-  letter-spacing: 0.5px;
-  line-height: 1.4em;
-}
-
-.belly {
-  margin: 44px auto;
-  width: 90%;
-}
-
-.howto-left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.howto-left img {
-  height: 70px;
-  width: 70px;
-  object-fit: cover;
+#finger img {
+  display: block;
+  margin: 0 auto;
+  width: 66px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: relative;
+  animation-name: wobble;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
 
 }
 
-.howto-left p {
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-align: left;
-  line-height: 1.2em;
-  padding-left: 20px;
+@-webkit-keyframes wobble {
+  from {bottom: 30px;}
+  to {bottom: 39px;}
 }
 
-.howto-right {
-display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 40px;
+
+.howto-vid {
+  /*border: 5px solid blue;*/
+  margin: 20px;
+  height: 100vh;
 }
 
-.howto-right img {
-  height: 70px;
-  width: 70px;
-  object-fit: cover;
+@media (min-width: 800px) {
+  .wheel-spin {
+    width: 800px;
+    height: 800px;
+    margin-top: 10px;
+  }
+  #play-button {
+    padding: 2% 0;
+    border-radius: 29px;
+    width: 30%;
+  }
+  .howto-vid {
+  /*border: 5px solid blue;*/
+  margin: 200px;
+  height: 100vh;
+  }
 }
-
-.howto-right p {
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  text-align: left;
-  line-height: 1.2em;
-  padding-left: 20px;
