@@ -1,0 +1,27 @@
+.iphone-container {
+  position: relative;
+  width: 371px;
+  height: 624px;
+  margin: 0 auto;
+}
+.player {
+  width: 240px;
+  height: 430px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 98px;
+  left: 67px;
+}
+img.thumbnail {
+  z-index: 3;
+  position: absolute;
+  bottom: 96px;
+  width: 242px;
+  left: 65px;
+}
+img.play-svg {
+  position: absolute;
+  z-index: 4;
+  opacity: 0.8;
+  top: 113px;
+}

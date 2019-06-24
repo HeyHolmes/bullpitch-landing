@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="videoplayer.css">
 </head>
 
 <body>
@@ -14,66 +15,31 @@
     <div class="wheel-spin">
       <a href="https://dcts.github.io/bullpitch/" id="play-button">PITCH</a>
       <div id="howto">
-        <p>HOW TO PLAY</p>
+        <p><a href="#jumptoend">HOW TO PLAY</a></p>
       </div>
     </div>
-    <div id="finger">
-      <img src="images/finger-pointer.png">
-    </div>
-    <img class="iphone" src="images/iphone.png" alt="">
-    <div class="player-container">
+    <a href="#jumptoend">
+      <div id="finger">
+        <img src="images/finger-pointer.png">
+      </div>
+    </a>
+
+    <div class="iphone-container">
+      <img class="play-svg" src="images/play.svg">
+      <img class="thumbnail" src="images/thumbnail.png">
+      <a id="jumptoend" href="jumptoend"></a>
+      <img class="iphone" src="images/iphone.png" alt="">
       <video class="player" src="images/howto-vid.mp4" webkit-playsinline playsinline>
         Your browser does not support HTML5 video.
       </video>
     </div>
-    <button id="startVideo">START</button>
-
   </div>
   <br>
-    <!-- <div class="howto-vid">
-      <iframe width="100%" height="700" src="https://www.youtube.com/embed/BnRJXyyNuSo" frameborder="0" allowfullscreen=""></iframe>
-    </div> -->
+
+  <!-- LOAD JAVASCRIPTS -->
   <script src="animate.js"> </script>
+  <script src="videoplayer.js"> </script>
 </body>
 
 </html>
 
-
-<style>
-  .iphone {
-    margin: 0 auto;
-    display: block;
-  }
-  .player-container {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    text-align: center;
-    border: 10px solid rgba(210,210,210, 0.5);
-    border-radius: 40px;
-    overflow: hidden;
-    width: 280px;
-    height: 480px;
-    z-index: 5;
-    position: relative;
-  }
-  .player {
-    width: 280px;
-    height: 480px;
-    object-fit: cover;
-  }
-</style>
-
-<script>
-  // get DOM elements
-  const video = document.querySelector(".player");
-  const startVideo = document.getElementById("startVideo");
-  // video.allowFullscreen = false;
-  // hook up listeners
-  video.addEventListener("click", (e) => {
-    video[video.paused ? "play" : "pause"]();
-  });
-
-  startVideo.addEventListener("click", (e) => {
-    video[video.paused ? "play" : "pause"]();
-  });
-</script>
