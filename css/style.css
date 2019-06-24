@@ -16,7 +16,7 @@ a {
 .wheel-spin {
   width: 100%;
   height: 90%;
-  background-image:url("images/landing-spinner.gif");
+  background-image:url("../images/landing-spinner.gif");
   background-size: cover;
   background-position: top;
   margin: 0 auto;
