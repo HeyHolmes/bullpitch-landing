@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.made-by-batch244 {
+  position: relative;$
+}
+.text1 {
+  position: absolute;
+  color: white;
+  font-size: 8px;
+  right: -17px;
+  top: -9px;
+  font-family: 'Roboto', sans-serif;
+}
+.text2 {
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  left: 69px;
+  bottom: -6px;
+  font-family: 'Roboto', sans-serif;
+}
+img.lewagon-logo {
+  height: 40px;
+}
+img.beer-img {
+  height: 60px;
+}

@@ -9,7 +9,5 @@ setTimeout(function(){
 setTimeout(function(){
   howToText.classList.add("appear");
   fingerMe.classList.add("appear");
-  console.log(howToText);
 },4000);
 
-console.log(fingerMe);

@@ -3,14 +3,17 @@
   width: 371px;
   height: 624px;
   margin: 0 auto;
+  margin-bottom: 40px;
+}
+.iphone {
+  opacity: 0;
 }
 .player {
-  width: 240px;
-  height: 430px;
+  width: 100vw;
   object-fit: cover;
   position: absolute;
-  bottom: 98px;
-  left: 67px;
+  bottom: -37px;
+  left: 0;
 }
 img.thumbnail {
   z-index: 3;
@@ -24,4 +27,18 @@ img.play-svg {
   z-index: 4;
   opacity: 0.8;
   top: 113px;
+}
+@media only screen and (min-width: 600px) {
+  .iphone {
+    opacity: 1;
+  }
+  .player {
+    width: 240px;
+    height: 430px;
+    left: 67px;
+    bottom: 98px
+  }
+  .iphone-container {
+    margin-bottom: 0;
+  }
 }
